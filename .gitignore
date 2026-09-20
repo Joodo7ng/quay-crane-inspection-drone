@@ -1,0 +1,36 @@
+# 가중치
+*.pt
+*.pth
+*.onnx
+*.engine
+weights/
+
+# 데이터, 영상, 압축 파일
+data/
+caps/
+*.mp4
+*.mov
+*.avi
+*.zip
+
+# 실행 중에 생기는 파일
+detections.csv
+status.json
+
+# 비밀 값
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS, 에디터
+.DS_Store
+.vscode/
+.idea/
+
+# 안 쓰는 구버전과 옛 기록
+_old_records/
