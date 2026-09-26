@@ -1,0 +1,137 @@
+{
+  "status": "completed",
+  "dataset_sha256": "888769d225b9f3464ba2d59038460bcf2552c3cd8ee699a91f74f9f46edfeb52",
+  "models": {
+    "crack": {
+      "best_epoch": 1,
+      "epochs_run": 6,
+      "elapsed_seconds": 6.686412845000632,
+      "checkpoint_sha256": "58367726f43b055a02143d1a663aa367b48138b0862366defb19581743099d49",
+      "encoder_unchanged": true,
+      "original_checkpoint_unchanged": true,
+      "review_candidate": false,
+      "deployment_replaced": false,
+      "baseline": {
+        "n_images": 4,
+        "positive_n": 3,
+        "normal_n": 1,
+        "positive_macro": {
+          "iou": 0.1126796626215681,
+          "dice": 0.1926810488575653,
+          "recall": 0.33611069650649267,
+          "precision": 0.316832987276702
+        },
+        "normal_false_positive_images": 1,
+        "normal_mean_false_positive_area": 0.0044708251953125
+      },
+      "finetuned": {
+        "n_images": 4,
+        "positive_n": 3,
+        "normal_n": 1,
+        "positive_macro": {
+          "iou": 0.13399881608873102,
+          "dice": 0.2193862379920746,
+          "recall": 0.43442759686383314,
+          "precision": 0.18539124690338563
+        },
+        "normal_false_positive_images": 1,
+        "normal_mean_false_positive_area": 0.004955291748046875
+      },
+      "train_ids": [
+        "QC_001",
+        "QC_002",
+        "QC_007",
+        "QC_008",
+        "QC_029",
+        "QC_031",
+        "QC_035",
+        "QC_037",
+        "QC_040",
+        "QC_045",
+        "QC_046",
+        "QC_050",
+        "QC_010",
+        "QC_011",
+        "QC_012",
+        "QC_013"
+      ],
+      "val_ids": [
+        "QC_038",
+        "QC_044",
+        "QC_048",
+        "QC_009"
+      ]
+    },
+    "corrosion": {
+      "best_epoch": 5,
+      "epochs_run": 10,
+      "elapsed_seconds": 11.891139465000379,
+      "checkpoint_sha256": "aaa81f692610a1d2eb8abb091270c791b85c419dcce661935d5a3391454efd4c",
+      "encoder_unchanged": true,
+      "original_checkpoint_unchanged": true,
+      "review_candidate": true,
+      "deployment_replaced": false,
+      "baseline": {
+        "n_images": 5,
+        "positive_n": 4,
+        "normal_n": 1,
+        "positive_macro": {
+          "iou": 0.24159202920080258,
+          "dice": 0.3647523108953971,
+          "recall": 0.577327391935884,
+          "precision": 0.40260119210113005
+        },
+        "normal_false_positive_images": 0,
+        "normal_mean_false_positive_area": 0
+      },
+      "finetuned": {
+        "n_images": 5,
+        "positive_n": 4,
+        "normal_n": 1,
+        "positive_macro": {
+          "iou": 0.26365130785013263,
+          "dice": 0.3980374963306077,
+          "recall": 0.6655511560932071,
+          "precision": 0.4214915881149983
+        },
+        "normal_false_positive_images": 0,
+        "normal_mean_false_positive_area": 0
+      },
+      "train_ids": [
+        "QC_002",
+        "QC_008",
+        "QC_005",
+        "QC_016",
+        "QC_021",
+        "QC_022",
+        "QC_024",
+        "QC_025",
+        "QC_026",
+        "QC_028",
+        "QC_032",
+        "QC_033",
+        "QC_034",
+        "QC_039",
+        "QC_010",
+        "QC_011",
+        "QC_012",
+        "QC_013"
+      ],
+      "val_ids": [
+        "QC_044",
+        "QC_004",
+        "QC_014",
+        "QC_015",
+        "QC_009"
+      ]
+    }
+  },
+  "prediction_checks": 18,
+  "download_zip_sha256": "66a8b8ec1a8af75e6557034a079d5b437eefd4e397367cb349908be8ca898e34",
+  "download_zip_bytes": 119110912,
+  "local_download_size_verified": true,
+  "local_download_sha256_verified": false,
+  "local_copy_blocker": "macOS denied reading downloaded ZIP; Colab validated results; ZIP exists in Downloads with matching byte length.",
+  "colab_url": "https://colab.research.google.com/drive/1g4_u3gHFLZIziJclJHE_Tf19QV5Mq0zY#scrollTo=Us70Riqclvqj",
+  "evidence": "Colab cell11 actual training; cell12 independently recalculated all18 prediction masks and checked checkpoint hashes/finite tensors. Summary transcribed from visible Colab verification output."
+}
