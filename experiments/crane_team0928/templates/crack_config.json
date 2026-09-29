@@ -1,0 +1,17 @@
+{
+  "task": "crack",
+  "data": "/content/drive/MyDrive/ICT_통합실험0928/prepared_trainval_v1/trainval",
+  "weights": "/content/drive/MyDrive/ICT_통합실험0928/weights/best_E5_tversky.pt",
+  "size": 512,
+  "epochs": 20,
+  "patience": 5,
+  "batch_size": 2,
+  "lr": 3e-05,
+  "threshold": 0.5,
+  "normal_fp_pixels": 0,
+  "seed": 20260928,
+  "device": "cuda",
+  "selection_domain": "real",
+  "alpha": 0.3,
+  "tversky_reduction": "batch"
+}
