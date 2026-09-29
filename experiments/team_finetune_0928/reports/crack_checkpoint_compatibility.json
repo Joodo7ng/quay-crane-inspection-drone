@@ -1,0 +1,20 @@
+{
+  "checkpoint": "/Users/jungsubin/Documents/Claude/Projects/ICT 드론/02_Codex_아웃풋/01_AI_학습검증/신규35장_파인튜닝0926/crane35_prepare/best_E5_tversky.pt",
+  "sha256": "216b878a3763ff030f12a9ca8d1a194ff1d693d418f2b29a6ecab3993f4282d8",
+  "strict_load": true,
+  "input_shape": [
+    1,
+    3,
+    512,
+    512
+  ],
+  "output_shape": [
+    1,
+    1,
+    512,
+    512
+  ],
+  "finite": true,
+  "training_executed": false,
+  "accuracy_evaluated": false
+}

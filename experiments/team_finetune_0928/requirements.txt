@@ -1,0 +1,4 @@
+segmentation-models-pytorch==0.5.0
+numpy>=1.26,<3
+Pillow>=10,<13
+# Use the matched PyTorch/torchvision pair already supplied by the Colab GPU runtime.

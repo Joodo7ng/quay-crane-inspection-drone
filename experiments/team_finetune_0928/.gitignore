@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.pt
+*.pth
+*.zip
+inputs/
+outputs/
+runs/
+results/
+prepared*/
+unpacked*/
