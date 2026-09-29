@@ -1,0 +1,50 @@
+[
+  {
+    "package": "hyemin_test_20260929_v3.zip",
+    "images": 30,
+    "bytes": 8831039,
+    "sha256": "ff7843905f5c26d788cacb7f9dab5facdb4235b8c285224afce8515e0378e5e6",
+    "download_url": null,
+    "status": "input_audit_pending"
+  },
+  {
+    "package": "hyemin_trainval_20260929_v5.zip",
+    "images": 120,
+    "bytes": 44517645,
+    "sha256": "f87e63e65a975d7daae8fe1b9b177bdc4aabe4a9e5842419d2efd2b45c0ac319",
+    "download_url": null,
+    "status": "input_audit_pending"
+  },
+  {
+    "package": "subin_test_20260929_v5.zip",
+    "images": 30,
+    "bytes": 9123129,
+    "sha256": "9b10f3d70f1cb0438de8713e3a17c2cf7b21ae8d9b147e7affe23371ec017bbf",
+    "download_url": null,
+    "status": "individual_package_verified"
+  },
+  {
+    "package": "subin_trainval_20260929_v4.zip",
+    "images": 120,
+    "bytes": 61359858,
+    "sha256": "1c743839fd59152f02e578913c10f13b4bb75b25b75f03b81fd017e36573d80e",
+    "download_url": null,
+    "status": "individual_package_verified"
+  },
+  {
+    "package": "eunsu_test_20260929_v2.zip",
+    "images": 30,
+    "bytes": 16842639,
+    "sha256": "eb1efb8bcb52992bf1f62c0b6639e337fd644a9d05df04779613ac943d68ab81",
+    "download_url": null,
+    "status": "review_and_split_pending"
+  },
+  {
+    "package": "eunsu_trainval_20260929_v5.zip",
+    "images": 120,
+    "bytes": 36108899,
+    "sha256": "a24d343ea7aece09af6982186f51ecb6f1c0ddcb14b54c2ba274251da74fe196",
+    "download_url": null,
+    "status": "review_and_split_pending"
+  }
+]
