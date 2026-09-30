@@ -34,3 +34,8 @@ venv/
 
 # 안 쓰는 구버전과 옛 기록
 _old_records/
+
+# Inspection runtime records
+inspection_data/
+.pytest_cache/
+validation/*_records/
