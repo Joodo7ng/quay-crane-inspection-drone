@@ -1,0 +1,800 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "training_allowed": false,
+    "visual_accepted": true,
+    "needs_rereview": false,
+    "human_approved": true
+  },
+  "shapes": [
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          180,
+          496
+        ],
+        [
+          174,
+          511
+        ],
+        [
+          185,
+          511
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          156,
+          411
+        ],
+        [
+          130,
+          476
+        ],
+        [
+          118,
+          511
+        ],
+        [
+          137,
+          511
+        ],
+        [
+          155,
+          461
+        ],
+        [
+          164,
+          440
+        ],
+        [
+          163,
+          433
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          310,
+          383
+        ],
+        [
+          303,
+          400
+        ],
+        [
+          312,
+          410
+        ],
+        [
+          322,
+          407
+        ],
+        [
+          326,
+          407
+        ],
+        [
+          332,
+          391
+        ],
+        [
+          324,
+          383
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          244,
+          326
+        ],
+        [
+          232,
+          362
+        ],
+        [
+          230,
+          365
+        ],
+        [
+          228,
+          373
+        ],
+        [
+          210,
+          420
+        ],
+        [
+          207,
+          431
+        ],
+        [
+          185,
+          484
+        ],
+        [
+          185,
+          487
+        ],
+        [
+          192,
+          509
+        ],
+        [
+          191,
+          511
+        ],
+        [
+          189,
+          511
+        ],
+        [
+          202,
+          511
+        ],
+        [
+          231,
+          436
+        ],
+        [
+          234,
+          431
+        ],
+        [
+          240,
+          414
+        ],
+        [
+          243,
+          410
+        ],
+        [
+          250,
+          417
+        ],
+        [
+          254,
+          415
+        ],
+        [
+          255,
+          417
+        ],
+        [
+          235,
+          467
+        ],
+        [
+          220,
+          511
+        ],
+        [
+          239,
+          511
+        ],
+        [
+          273,
+          422
+        ],
+        [
+          273,
+          418
+        ],
+        [
+          268,
+          405
+        ],
+        [
+          268,
+          402
+        ],
+        [
+          259,
+          374
+        ],
+        [
+          257,
+          372
+        ],
+        [
+          258,
+          370
+        ],
+        [
+          253,
+          357
+        ],
+        [
+          253,
+          354
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          349,
+          304
+        ],
+        [
+          338,
+          315
+        ],
+        [
+          339,
+          325
+        ],
+        [
+          346,
+          326
+        ],
+        [
+          354,
+          329
+        ],
+        [
+          363,
+          322
+        ],
+        [
+          365,
+          319
+        ],
+        [
+          361,
+          308
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          360,
+          281
+        ],
+        [
+          357,
+          296
+        ],
+        [
+          369,
+          302
+        ],
+        [
+          378,
+          294
+        ],
+        [
+          373,
+          281
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          220,
+          250
+        ],
+        [
+          161,
+          399
+        ],
+        [
+          168,
+          427
+        ],
+        [
+          170,
+          425
+        ],
+        [
+          179,
+          400
+        ],
+        [
+          185,
+          387
+        ],
+        [
+          186,
+          382
+        ],
+        [
+          228,
+          279
+        ],
+        [
+          227,
+          271
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          390,
+          231
+        ],
+        [
+          386,
+          246
+        ],
+        [
+          393,
+          252
+        ],
+        [
+          399,
+          246
+        ],
+        [
+          397,
+          233
+        ],
+        [
+          394,
+          233
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          434,
+          0
+        ],
+        [
+          414,
+          0
+        ],
+        [
+          392,
+          51
+        ],
+        [
+          380,
+          87
+        ],
+        [
+          346,
+          172
+        ],
+        [
+          338,
+          172
+        ],
+        [
+          324,
+          164
+        ],
+        [
+          315,
+          164
+        ],
+        [
+          311,
+          162
+        ],
+        [
+          296,
+          189
+        ],
+        [
+          287,
+          208
+        ],
+        [
+          275,
+          243
+        ],
+        [
+          249,
+          311
+        ],
+        [
+          249,
+          316
+        ],
+        [
+          261,
+          352
+        ],
+        [
+          262,
+          358
+        ],
+        [
+          269,
+          343
+        ],
+        [
+          284,
+          300
+        ],
+        [
+          321,
+          208
+        ],
+        [
+          326,
+          193
+        ],
+        [
+          329,
+          188
+        ],
+        [
+          339,
+          192
+        ],
+        [
+          334,
+          203
+        ],
+        [
+          321,
+          240
+        ],
+        [
+          318,
+          244
+        ],
+        [
+          315,
+          256
+        ],
+        [
+          313,
+          259
+        ],
+        [
+          301,
+          295
+        ],
+        [
+          288,
+          327
+        ],
+        [
+          275,
+          364
+        ],
+        [
+          273,
+          366
+        ],
+        [
+          265,
+          366
+        ],
+        [
+          278,
+          409
+        ],
+        [
+          282,
+          396
+        ],
+        [
+          299,
+          356
+        ],
+        [
+          302,
+          345
+        ],
+        [
+          303,
+          344
+        ],
+        [
+          315,
+          356
+        ],
+        [
+          329,
+          350
+        ],
+        [
+          334,
+          339
+        ],
+        [
+          325,
+          329
+        ],
+        [
+          324,
+          330
+        ],
+        [
+          309,
+          330
+        ],
+        [
+          308,
+          328
+        ],
+        [
+          316,
+          308
+        ],
+        [
+          320,
+          315
+        ],
+        [
+          329,
+          315
+        ],
+        [
+          330,
+          316
+        ],
+        [
+          338,
+          302
+        ],
+        [
+          333,
+          290
+        ],
+        [
+          326,
+          289
+        ],
+        [
+          324,
+          287
+        ],
+        [
+          324,
+          285
+        ],
+        [
+          330,
+          270
+        ],
+        [
+          338,
+          265
+        ],
+        [
+          341,
+          246
+        ],
+        [
+          339,
+          244
+        ],
+        [
+          343,
+          233
+        ],
+        [
+          345,
+          231
+        ],
+        [
+          350,
+          232
+        ],
+        [
+          359,
+          220
+        ],
+        [
+          354,
+          206
+        ],
+        [
+          360,
+          192
+        ],
+        [
+          367,
+          190
+        ],
+        [
+          365,
+          179
+        ],
+        [
+          376,
+          154
+        ],
+        [
+          393,
+          106
+        ],
+        [
+          406,
+          77
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          390,
+          0
+        ],
+        [
+          370,
+          0
+        ],
+        [
+          360,
+          30
+        ],
+        [
+          358,
+          33
+        ],
+        [
+          345,
+          75
+        ],
+        [
+          330,
+          108
+        ],
+        [
+          322,
+          130
+        ],
+        [
+          329,
+          130
+        ],
+        [
+          337,
+          132
+        ],
+        [
+          344,
+          110
+        ],
+        [
+          359,
+          77
+        ],
+        [
+          374,
+          37
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          342,
+          0
+        ],
+        [
+          320,
+          0
+        ],
+        [
+          309,
+          30
+        ],
+        [
+          272,
+          122
+        ],
+        [
+          271,
+          127
+        ],
+        [
+          225,
+          238
+        ],
+        [
+          233,
+          265
+        ],
+        [
+          271,
+          172
+        ],
+        [
+          294,
+          120
+        ],
+        [
+          309,
+          77
+        ],
+        [
+          328,
+          37
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "User-requested revision 2: continuous corrosion streaks and surrounding marks; foreground ropes excluded; AI draft requiring re-review"
+    }
+  ],
+  "imagePath": "../images/SB_QC_015.png",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512,
+  "annotation_revision": 2,
+  "review_history": [
+    {
+      "reviewed_at": "2026-09-26T08:46:59.646Z",
+      "annotation_revision": 1,
+      "decision": "fix",
+      "note": "자국에 전체적으로 라벨 필요"
+    },
+    {
+      "reviewed_at": "2026-09-26T18:05:46+09:00",
+      "annotation_revision": 2,
+      "decision": "accept_visual",
+      "source": "user_chat",
+      "note": "확인함! 빠르게 다음으로 가자..."
+    }
+  ]
+}

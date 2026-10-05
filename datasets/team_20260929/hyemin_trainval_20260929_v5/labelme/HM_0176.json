@@ -1,0 +1,36 @@
+{
+  "version": "5.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          511.0
+        ],
+        [
+          511.0,
+          511.0
+        ],
+        [
+          511.0,
+          0.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "../images/HM_0176.png",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512
+}

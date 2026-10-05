@@ -1,0 +1,74 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "human_reviewed": true
+  },
+  "shapes": [
+    {
+      "label": "crack",
+      "points": [
+        [
+          486.03,
+          720.26
+        ],
+        [
+          511.77,
+          700.23
+        ],
+        [
+          535.38,
+          684.5
+        ],
+        [
+          564.63,
+          664.28
+        ],
+        [
+          590.53,
+          645.57
+        ],
+        [
+          607.7,
+          634.13
+        ],
+        [
+          601.9,
+          618.67
+        ],
+        [
+          584.51,
+          630.27
+        ],
+        [
+          558.57,
+          649.0
+        ],
+        [
+          529.5,
+          669.1
+        ],
+        [
+          505.59,
+          685.05
+        ],
+        [
+          479.49,
+          705.34
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": false
+      }
+    }
+  ],
+  "imagePath": "../images/SB_QC_045.jpg",
+  "imageData": null,
+  "imageHeight": 1440,
+  "imageWidth": 1080
+}

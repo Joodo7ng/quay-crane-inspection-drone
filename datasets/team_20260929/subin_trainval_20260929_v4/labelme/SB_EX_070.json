@@ -1,0 +1,13 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "human_approved": true
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_EX_070.jpg",
+  "imageData": null,
+  "imageHeight": 300,
+  "imageWidth": 400
+}

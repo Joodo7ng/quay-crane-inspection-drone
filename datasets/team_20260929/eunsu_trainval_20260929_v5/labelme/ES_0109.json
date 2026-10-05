@@ -1,0 +1,83 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "normal": false,
+    "draft": true,
+    "suspected_crack": true
+  },
+  "shapes": [
+    {
+      "label": "crack",
+      "points": [
+        [
+          426.0,
+          380.0
+        ],
+        [
+          429.0,
+          385.0
+        ],
+        [
+          429.0,
+          391.0
+        ],
+        [
+          426.0,
+          396.0
+        ],
+        [
+          424.0,
+          403.0
+        ],
+        [
+          422.0,
+          410.0
+        ],
+        [
+          420.0,
+          415.0
+        ],
+        [
+          418.0,
+          415.0
+        ],
+        [
+          420.0,
+          409.0
+        ],
+        [
+          422.0,
+          402.0
+        ],
+        [
+          424.0,
+          395.0
+        ],
+        [
+          427.0,
+          390.0
+        ],
+        [
+          427.0,
+          386.0
+        ],
+        [
+          425.0,
+          382.0
+        ]
+      ],
+      "group_id": null,
+      "description": "Visible crack boundary draft; 균열 의심",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true
+      },
+      "mask": null
+    }
+  ],
+  "imagePath": "../images/ES_0109.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 960,
+  "description": "노란 화살표 바로 아래 x418–429/y380–415의 미세 선형 흔적을 균열 의심 후보로 표시. 화살표 자체는 제외. 파단면 가공 흔적과 구별이 어려워 검수 시 확인 필요."
+}

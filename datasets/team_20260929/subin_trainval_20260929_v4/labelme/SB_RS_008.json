@@ -1,0 +1,15 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "training_allowed": false,
+    "human_reviewed": true
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_RS_008.png",
+  "imageData": null,
+  "imageHeight": 259,
+  "imageWidth": 384,
+  "correction_note": "차량과 바닥이 차지하는 면적을 줄이고 크레인 붐 접합부를 남김."
+}

@@ -1,0 +1,13 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "human_approved": true
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_TS_002.png",
+  "imageData": null,
+  "imageHeight": 330,
+  "imageWidth": 780
+}

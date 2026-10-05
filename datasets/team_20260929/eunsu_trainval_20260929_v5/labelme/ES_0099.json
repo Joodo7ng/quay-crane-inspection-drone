@@ -1,0 +1,35 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "training_allowed": false,
+    "visual_accepted": true,
+    "quality_excluded": false,
+    "review_only": false,
+    "confirmed_normal": true,
+    "needs_rereview": false
+  },
+  "shapes": [],
+  "imagePath": "../images/ES_0099.png",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512,
+  "annotation_revision": 3,
+  "review_history": [
+    {
+      "reviewed_at": "2026-09-26T08:46:59.646Z",
+      "annotation_revision": 1,
+      "decision": "ambiguous",
+      "note": "사진 더 크롭 필요"
+    },
+    {
+      "reviewed_at": "2026-09-26T17:57:04+09:00",
+      "source": "user_chat_conditional_acceptance_after_AI_visual_check",
+      "annotation_revision": 3,
+      "decision": "accept_visual",
+      "note": "내가 크롭 요청한 사진을 그냥 크롭 안하고 그 사진 그대로 쓰게 되면 어떻게 돼? 문제 없으면 그냥 정상으로 쓰자",
+      "condition_check": "원래512크롭에서 뚜렷한 균열·부식이 확인되지 않음. 배경 비중이 큰 점을 설명하고 정상 후보로 복원함."
+    }
+  ]
+}

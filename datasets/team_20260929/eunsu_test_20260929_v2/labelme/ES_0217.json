@@ -1,0 +1,36 @@
+{
+  "version": "7.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          658.1196581196582,
+          2292.735042735043
+        ],
+        [
+          717.948717948718,
+          4258.547008547009
+        ],
+        [
+          2726.4957264957266,
+          4113.247863247863
+        ],
+        [
+          2264.9572649572656,
+          1643.1623931623933
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "../images/ES_0217.jpg",
+  "imageData": null,
+  "imageHeight": 4500,
+  "imageWidth": 3000
+}

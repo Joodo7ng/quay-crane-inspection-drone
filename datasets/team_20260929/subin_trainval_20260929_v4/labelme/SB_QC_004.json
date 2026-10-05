@@ -1,0 +1,598 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "training_allowed": false,
+    "visual_accepted": true,
+    "excluded": false,
+    "needs_rereview": false,
+    "human_approved": true
+  },
+  "shapes": [
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          16,
+          288
+        ],
+        [
+          32,
+          279
+        ],
+        [
+          52,
+          276
+        ],
+        [
+          62,
+          280
+        ],
+        [
+          80,
+          274
+        ],
+        [
+          103,
+          274
+        ],
+        [
+          118,
+          280
+        ],
+        [
+          126,
+          288
+        ],
+        [
+          146,
+          280
+        ],
+        [
+          172,
+          276
+        ],
+        [
+          192,
+          278
+        ],
+        [
+          205,
+          285
+        ],
+        [
+          209,
+          291
+        ],
+        [
+          16,
+          291
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          370,
+          291
+        ],
+        [
+          386,
+          287
+        ],
+        [
+          413,
+          288
+        ],
+        [
+          429,
+          285
+        ],
+        [
+          450,
+          288
+        ],
+        [
+          471,
+          284
+        ],
+        [
+          498,
+          285
+        ],
+        [
+          507,
+          289
+        ],
+        [
+          530,
+          286
+        ],
+        [
+          536,
+          293
+        ],
+        [
+          369,
+          294
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          544,
+          289
+        ],
+        [
+          567,
+          287
+        ],
+        [
+          586,
+          289
+        ],
+        [
+          609,
+          287
+        ],
+        [
+          639,
+          289
+        ],
+        [
+          675,
+          287
+        ],
+        [
+          701,
+          288
+        ],
+        [
+          712,
+          291
+        ],
+        [
+          740,
+          290
+        ],
+        [
+          753,
+          284
+        ],
+        [
+          774,
+          283
+        ],
+        [
+          790,
+          291
+        ],
+        [
+          816,
+          293
+        ],
+        [
+          822,
+          289
+        ],
+        [
+          842,
+          290
+        ],
+        [
+          853,
+          297
+        ],
+        [
+          542,
+          295
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          422,
+          179
+        ],
+        [
+          430,
+          179
+        ],
+        [
+          432,
+          193
+        ],
+        [
+          439,
+          196
+        ],
+        [
+          439,
+          214
+        ],
+        [
+          416,
+          214
+        ],
+        [
+          417,
+          202
+        ],
+        [
+          421,
+          196
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          611,
+          242
+        ],
+        [
+          617,
+          240
+        ],
+        [
+          620,
+          254
+        ],
+        [
+          618,
+          271
+        ],
+        [
+          610,
+          269
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          630,
+          228
+        ],
+        [
+          648,
+          229
+        ],
+        [
+          661,
+          234
+        ],
+        [
+          680,
+          234
+        ],
+        [
+          701,
+          233
+        ],
+        [
+          709,
+          239
+        ],
+        [
+          697,
+          246
+        ],
+        [
+          678,
+          244
+        ],
+        [
+          668,
+          241
+        ],
+        [
+          659,
+          245
+        ],
+        [
+          647,
+          241
+        ],
+        [
+          636,
+          239
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          639,
+          247
+        ],
+        [
+          647,
+          244
+        ],
+        [
+          656,
+          248
+        ],
+        [
+          664,
+          258
+        ],
+        [
+          663,
+          276
+        ],
+        [
+          655,
+          271
+        ],
+        [
+          651,
+          265
+        ],
+        [
+          642,
+          269
+        ],
+        [
+          640,
+          258
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          489,
+          384
+        ],
+        [
+          514,
+          382
+        ],
+        [
+          543,
+          388
+        ],
+        [
+          561,
+          392
+        ],
+        [
+          568,
+          406
+        ],
+        [
+          548,
+          410
+        ],
+        [
+          535,
+          401
+        ],
+        [
+          513,
+          402
+        ],
+        [
+          506,
+          395
+        ],
+        [
+          489,
+          395
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          522,
+          412
+        ],
+        [
+          540,
+          412
+        ],
+        [
+          548,
+          418
+        ],
+        [
+          559,
+          419
+        ],
+        [
+          557,
+          425
+        ],
+        [
+          539,
+          423
+        ],
+        [
+          526,
+          420
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          402,
+          379
+        ],
+        [
+          429,
+          380
+        ],
+        [
+          457,
+          381
+        ],
+        [
+          485,
+          381
+        ],
+        [
+          486,
+          398
+        ],
+        [
+          485,
+          410
+        ],
+        [
+          478,
+          414
+        ],
+        [
+          475,
+          406
+        ],
+        [
+          474,
+          395
+        ],
+        [
+          471,
+          389
+        ],
+        [
+          469,
+          401
+        ],
+        [
+          460,
+          405
+        ],
+        [
+          456,
+          411
+        ],
+        [
+          445,
+          416
+        ],
+        [
+          433,
+          414
+        ],
+        [
+          434,
+          405
+        ],
+        [
+          437,
+          399
+        ],
+        [
+          434,
+          392
+        ],
+        [
+          430,
+          387
+        ],
+        [
+          420,
+          385
+        ],
+        [
+          412,
+          385
+        ],
+        [
+          409,
+          391
+        ],
+        [
+          410,
+          395
+        ],
+        [
+          414,
+          397
+        ],
+        [
+          414,
+          402
+        ],
+        [
+          417,
+          409
+        ],
+        [
+          416,
+          412
+        ],
+        [
+          404,
+          409
+        ],
+        [
+          402,
+          401
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "user_fix_20260926_lower_nut"
+    }
+  ],
+  "imagePath": "../images/SB_QC_004.png",
+  "imageData": null,
+  "imageHeight": 559,
+  "imageWidth": 891,
+  "annotation_revision": 2,
+  "reviewed_at": "2026-09-26T08:07:31.782Z"
+}

@@ -1,0 +1,142 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "human_reviewed": true
+  },
+  "shapes": [
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          1052.16,
+          793.6
+        ],
+        [
+          1173.12,
+          775.68
+        ],
+        [
+          1336.32,
+          796.16
+        ],
+        [
+          1438.08,
+          811.52
+        ],
+        [
+          1445.76,
+          880.64
+        ],
+        [
+          1355.52,
+          901.12
+        ],
+        [
+          1284.48,
+          947.2
+        ],
+        [
+          1182.72,
+          954.88
+        ],
+        [
+          1069.44,
+          906.24
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": true
+      }
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          1345.92,
+          995.84
+        ],
+        [
+          1422.72,
+          1006.08
+        ],
+        [
+          1438.08,
+          1072.64
+        ],
+        [
+          1361.28,
+          1105.92
+        ],
+        [
+          1215.36,
+          1100.8
+        ],
+        [
+          1234.56,
+          1064.96
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": true
+      }
+    },
+    {
+      "label": "crack",
+      "points": [
+        [
+          1434.79,
+          1047.1
+        ],
+        [
+          1424.68,
+          1094.23
+        ],
+        [
+          1428.7,
+          1150.13
+        ],
+        [
+          1438.57,
+          1197.76
+        ],
+        [
+          1464.47,
+          1188.16
+        ],
+        [
+          1455.14,
+          1143.63
+        ],
+        [
+          1451.48,
+          1097.13
+        ],
+        [
+          1460.57,
+          1057.22
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": true
+      }
+    }
+  ],
+  "imagePath": "../images/SB_QC_044.png",
+  "imageData": null,
+  "imageHeight": 2560,
+  "imageWidth": 1920
+}

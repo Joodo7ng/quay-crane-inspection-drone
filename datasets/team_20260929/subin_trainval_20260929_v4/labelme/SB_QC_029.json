@@ -1,0 +1,58 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "human_reviewed": true
+  },
+  "shapes": [
+    {
+      "label": "crack",
+      "points": [
+        [
+          360.9,
+          318.42
+        ],
+        [
+          382.88,
+          331.0
+        ],
+        [
+          409.12,
+          338.48
+        ],
+        [
+          435.89,
+          338.03
+        ],
+        [
+          435.49,
+          327.45
+        ],
+        [
+          411.5,
+          328.06
+        ],
+        [
+          389.8,
+          321.78
+        ],
+        [
+          369.48,
+          310.03
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": true
+      }
+    }
+  ],
+  "imagePath": "../images/SB_QC_029.jpg",
+  "imageData": null,
+  "imageHeight": 529,
+  "imageWidth": 705
+}

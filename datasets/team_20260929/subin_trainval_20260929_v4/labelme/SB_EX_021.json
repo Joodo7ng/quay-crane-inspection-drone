@@ -1,0 +1,14 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "human_approved": true,
+    "training_allowed": false
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_EX_021.png",
+  "imageData": null,
+  "imageHeight": 309,
+  "imageWidth": 454
+}

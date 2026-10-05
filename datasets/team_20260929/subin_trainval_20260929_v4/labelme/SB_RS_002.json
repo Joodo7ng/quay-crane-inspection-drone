@@ -1,0 +1,16 @@
+{
+  "version": "5.8.1",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "training_allowed": false,
+    "human_reviewed": true
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_RS_002.png",
+  "imageData": null,
+  "imageHeight": 780,
+  "imageWidth": 930,
+  "correction_note": "정상 사진 후보로 결함 폴리곤을 넣지 않은 빈 shapes 초안임. 이번 추가 크롭 사진 자체의 재검토가 먼저 필요함.",
+  "annotation_revision": 1
+}

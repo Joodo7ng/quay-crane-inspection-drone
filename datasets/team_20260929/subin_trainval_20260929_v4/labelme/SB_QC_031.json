@@ -1,0 +1,110 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "human_reviewed": true
+  },
+  "shapes": [
+    {
+      "label": "crack",
+      "points": [
+        [
+          558.06,
+          515.98
+        ],
+        [
+          562.17,
+          484.43
+        ],
+        [
+          561.84,
+          452.28
+        ],
+        [
+          536.02,
+          433.29
+        ],
+        [
+          528.94,
+          438.81
+        ],
+        [
+          552.27,
+          455.01
+        ],
+        [
+          551.94,
+          484.06
+        ],
+        [
+          547.86,
+          515.24
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": true
+      }
+    },
+    {
+      "label": "crack",
+      "points": [
+        [
+          563.2,
+          439.46
+        ],
+        [
+          628.84,
+          411.11
+        ],
+        [
+          694.59,
+          378.88
+        ],
+        [
+          755.25,
+          344.31
+        ],
+        [
+          790.26,
+          319.7
+        ],
+        [
+          784.65,
+          315.25
+        ],
+        [
+          750.03,
+          339.6
+        ],
+        [
+          689.86,
+          373.88
+        ],
+        [
+          624.54,
+          405.91
+        ],
+        [
+          559.1,
+          434.17
+        ]
+      ],
+      "group_id": null,
+      "description": "육안 기반 미검수 초안",
+      "shape_type": "polygon",
+      "flags": {
+        "draft": true,
+        "uncertain": true
+      }
+    }
+  ],
+  "imagePath": "../images/SB_QC_031.jpg",
+  "imageData": null,
+  "imageHeight": 765,
+  "imageWidth": 1024
+}

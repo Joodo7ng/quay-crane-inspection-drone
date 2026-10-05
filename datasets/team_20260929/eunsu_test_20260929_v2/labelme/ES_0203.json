@@ -1,0 +1,36 @@
+{
+  "version": "7.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "crack",
+      "points": [
+        [
+          570.559610705596,
+          182.05474452554745
+        ],
+        [
+          547.4452554744526,
+          301.2761557177615
+        ],
+        [
+          647.2019464720194,
+          315.8746958637469
+        ],
+        [
+          663.0170316301702,
+          196.65328467153284
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "../images/ES_0203.jpg",
+  "imageData": null,
+  "imageHeight": 459,
+  "imageWidth": 685
+}

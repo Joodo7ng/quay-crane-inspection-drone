@@ -1,0 +1,14 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "normal": true,
+    "draft": false,
+    "suspected_crack": false
+  },
+  "shapes": [],
+  "imagePath": "../images/ES_0119.jpg",
+  "imageData": null,
+  "imageHeight": 636,
+  "imageWidth": 955,
+  "description": "사용자가 지정한 정상 5장 중 하나. shapes는 빈 배열, 표시 없음. 사진 외관 기준이며 구조 안전성 검사 결과는 아님."
+}
