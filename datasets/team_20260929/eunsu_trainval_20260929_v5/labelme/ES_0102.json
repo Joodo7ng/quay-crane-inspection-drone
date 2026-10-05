@@ -1,0 +1,14 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "training_allowed": false,
+    "human_reviewed": true
+  },
+  "shapes": [],
+  "imagePath": "../images/ES_0102.png",
+  "imageData": null,
+  "imageHeight": 1027,
+  "imageWidth": 1526
+}

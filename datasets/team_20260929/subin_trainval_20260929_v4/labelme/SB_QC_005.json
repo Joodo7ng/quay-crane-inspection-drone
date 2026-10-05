@@ -1,0 +1,153 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "training_allowed": false,
+    "visual_accepted": true,
+    "excluded": false,
+    "needs_rereview": false,
+    "human_approved": true
+  },
+  "shapes": [
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          240,
+          202
+        ],
+        [
+          253,
+          197
+        ],
+        [
+          266,
+          200
+        ],
+        [
+          276,
+          209
+        ],
+        [
+          289,
+          232
+        ],
+        [
+          304,
+          255
+        ],
+        [
+          309,
+          276
+        ],
+        [
+          305,
+          293
+        ],
+        [
+          295,
+          311
+        ],
+        [
+          279,
+          324
+        ],
+        [
+          258,
+          330
+        ],
+        [
+          241,
+          322
+        ],
+        [
+          234,
+          305
+        ],
+        [
+          227,
+          287
+        ],
+        [
+          224,
+          270
+        ],
+        [
+          229,
+          250
+        ],
+        [
+          232,
+          235
+        ],
+        [
+          235,
+          220
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    },
+    {
+      "label": "corrosion",
+      "points": [
+        [
+          373,
+          184
+        ],
+        [
+          375,
+          193
+        ],
+        [
+          382,
+          195
+        ],
+        [
+          387,
+          191
+        ],
+        [
+          390,
+          202
+        ],
+        [
+          399,
+          206
+        ],
+        [
+          402,
+          215
+        ],
+        [
+          390,
+          211
+        ],
+        [
+          383,
+          203
+        ],
+        [
+          378,
+          204
+        ],
+        [
+          370,
+          193
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {},
+      "description": "AI visual draft; human review required"
+    }
+  ],
+  "imagePath": "../images/SB_QC_005.png",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512,
+  "reviewed_at": "2026-09-26T08:07:31.782Z"
+}

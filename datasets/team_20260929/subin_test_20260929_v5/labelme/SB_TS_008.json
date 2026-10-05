@@ -1,0 +1,15 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "training_allowed": false,
+    "human_reviewed": true
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_TS_008.png",
+  "imageData": null,
+  "imageHeight": 220,
+  "imageWidth": 245,
+  "correction_note": "크롭 범위를 위로 이동하여 상부 강재 연결부를 중심으로 조정함. 237×220의 실제 픽셀 크기이며 확대 생성하지 않음."
+}

@@ -1,0 +1,15 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "human_approved": true,
+    "training_allowed": false
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_EX_020.png",
+  "imageData": null,
+  "imageHeight": 700,
+  "imageWidth": 950,
+  "correction_note": "이번 메모에 따라 검토 화면 왼쪽의 가공 전 원본으로 되돌림. 신규 재크롭을 하지 않았으며 문자·표면 반사가 그대로 남아 있음."
+}

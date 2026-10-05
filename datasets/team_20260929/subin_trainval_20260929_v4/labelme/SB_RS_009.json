@@ -1,0 +1,15 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "training_allowed": false,
+    "human_reviewed": true
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_RS_009.png",
+  "imageData": null,
+  "imageHeight": 165,
+  "imageWidth": 435,
+  "correction_note": "다시 크롭하라는 메모에 따라 차량과 배경을 더 줄이고 붐 중앙부를 남김. 435×165로 세로 해상도가 제한되는 점을 함께 제시함."
+}

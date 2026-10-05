@@ -1,0 +1,15 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "human_approved": true,
+    "training_allowed": false
+  },
+  "shapes": [],
+  "imagePath": "../images/SB_EX_019.png",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 800,
+  "correction_note": "이전 크롭보다 위쪽으로 범위를 이동하여 붐 도장면을 더 남김. 원본 픽셀만 크롭했으며 재검토 대기함."
+}

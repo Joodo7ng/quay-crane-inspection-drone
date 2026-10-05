@@ -1,0 +1,23 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_reviewed": true,
+    "training_allowed": false,
+    "visual_accepted": true,
+    "confirmed_normal": true
+  },
+  "shapes": [],
+  "imagePath": "../images/ES_0098.png",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512,
+  "review_history": [
+    {
+      "reviewed_at": "2026-09-26T08:46:59.646Z",
+      "annotation_revision": 1,
+      "decision": "accept_visual",
+      "note": ""
+    }
+  ]
+}

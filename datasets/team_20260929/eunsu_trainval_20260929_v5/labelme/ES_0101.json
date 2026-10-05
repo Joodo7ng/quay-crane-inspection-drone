@@ -1,0 +1,15 @@
+{
+  "version": "5.5.0",
+  "flags": {
+    "draft": false,
+    "human_approved": true,
+    "training_allowed": false,
+    "human_reviewed": true
+  },
+  "shapes": [],
+  "imagePath": "../images/ES_0101.png",
+  "imageData": null,
+  "imageHeight": 492,
+  "imageWidth": 174,
+  "correction_note": "노란 크레인 부재 위의 배경을 더 줄임. 639×147의 가로로 긴 크롭이며 세부 결함 판독 해상도에 한계가 있음."
+}
