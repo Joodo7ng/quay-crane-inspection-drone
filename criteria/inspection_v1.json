@@ -1,0 +1,779 @@
+{
+  "schema_version": 1,
+  "version": "2026-09-30.1",
+  "title": "안벽크레인 영상 점검 지원 기준",
+  "priority_meaning": "정상/경미/주의/위험은 점검 우선순위이며 법정 안전 판정이 아님",
+  "normal_policy": {
+    "id": "TEAM-NO-CANDIDATE",
+    "version": "1.0.0",
+    "category": "team_workflow",
+    "status": "active",
+    "review_status": "implementation_reviewed",
+    "required_inputs": [
+      "all_models_success",
+      "quality_usable"
+    ],
+    "reason": "두 모델의 분석 완료 및 점검자 입력 품질 확인 상태에서 현재 영상의 후보 미검출임",
+    "document": "팀 영상점검 운영규칙",
+    "issuer": "크랙캐쳐 구현 검토",
+    "clause": "TEAM-NO-CANDIDATE",
+    "reviewer": "요구사항 기반 로직 검토; 현장 검증 아님",
+    "review_date": "2026-09-30",
+    "field_validation_status": "미검증"
+  },
+  "source_attachment": {
+    "name": "안벽크레인_부재별_점검정보.md",
+    "sha256": "b8646c78fad68f3ddefbc8199dcc4e2b980872733da6fd8d7bd1dbffc1817fa9"
+  },
+  "references": {
+    "G8-4": {
+      "id": "G8-4",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제8조④",
+      "scope": "위치·방법 근거 조항 (제2장 제조검사 기준)",
+      "summary": "균열 의심 시 정밀 점검 방법",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G8-6": {
+      "id": "G8-6",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제8조⑥",
+      "scope": "위치·방법 근거 조항 (제2장 제조검사 기준)",
+      "summary": "물고임 자리(윗면, 수평면) 부식 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G9-8": {
+      "id": "G9-8",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제9조⑧",
+      "scope": "위치·방법 근거 조항 (제2장 제조검사 기준)",
+      "summary": "FCM 부재의 연결부 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G9-6": {
+      "id": "G9-6",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제9조⑥",
+      "scope": "위치·방법 근거 조항 (제2장 제조검사 기준)",
+      "summary": "기계실 지붕 점검 방법(사람 점검 가능)",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G17": {
+      "id": "G17",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제17조(헤드블록 및 스프레더) ①",
+      "scope": "위치·방법 근거 조항 (제2장 제조검사 기준)",
+      "summary": "스프레더 균열 의심 시 정밀 점검 방법",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G21": {
+      "id": "G21",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제21조(도장)",
+      "scope": "위치·방법 근거 조항 (제2장 제조검사 기준)",
+      "summary": "도장 손상·박리와 초기 부식 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G47": {
+      "id": "G47",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제47조(공통사항) ③1호",
+      "scope": "정기검사 판정 조항",
+      "summary": "레일 균열·부식 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G48": {
+      "id": "G48",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제48조(구조물 안전)",
+      "scope": "정기검사 판정 조항",
+      "summary": "모든 구조 부재의 균열·부식 판정 기준",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G49": {
+      "id": "G49",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제49조(장비주행 및 트롤리주행장치) ④, ⑦",
+      "scope": "정기검사 판정 조항",
+      "summary": "주행 대차 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G50": {
+      "id": "G50",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제50조(호이스팅장치) ③, ④1호",
+      "scope": "정기검사 판정 조항",
+      "summary": "스프레더·헤드블록 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G51": {
+      "id": "G51",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제51조(기복 및 선회장치) ② 4호",
+      "scope": "정기검사 판정 조항",
+      "summary": "붐 힌지 점검",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "G4": {
+      "id": "G4",
+      "document": "항만시설장비검사기준",
+      "issuer": "해양수산부",
+      "edition": "첨부 기재: 제2021-187호",
+      "clause": "항만시설장비검사기준 제4조(기타 기준적용)",
+      "scope": "점검·검사 체계",
+      "summary": "ISO 4628-3, ISO 12944를 참고 기준으로 쓰는 근거",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "전달 문서 확인 / 법령 원문 재확인 미완료",
+      "reviewer": "첨부 작성자: 혜민; 이 구현에서 원문 검증하지 않음",
+      "review_date": "2026-09-30",
+      "url": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000204887",
+      "automatic_legal_judgment": false
+    },
+    "PEMA": {
+      "id": "PEMA",
+      "document": "Practical Structural Examination in Ports and Terminals",
+      "issuer": "PEMA",
+      "edition": "IP09, 2016",
+      "clause": "2.4절 및 3장",
+      "scope": "FCM 및 피로손상 부위의 점검 참고",
+      "summary": "부재와 연결부별 점검 위치 확인이 필요함",
+      "category": "external_guidance",
+      "verification_status": "attachment_only",
+      "verification_label": "첨부에서 원문 확인 주장 / 이번 구현에서 독립 재검증하지 않음",
+      "reviewer": "첨부 작성자: 혜민",
+      "review_date": "2026-09-30",
+      "url": "https://www.pema.org/wp-content/uploads/2022/09/PEMA-IP09-Practical-Structural-Examination-in-Ports-and-Terminals.pdf",
+      "automatic_legal_judgment": false
+    }
+  },
+  "components": {
+    "unknown": {
+      "id": "unknown",
+      "name": "미상",
+      "fcm": "unknown",
+      "parts": [
+        "미상"
+      ],
+      "reference_ids": [],
+      "checks": [
+        "부재 종류 및 결함 위치 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "boom": {
+      "id": "boom",
+      "name": "붐",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "힌지부",
+        "인장 판 용접부",
+        "부착물 용접부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "힌지부와 인장 판 및 부착물 용접부 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "trolley_girder": {
+      "id": "trolley_girder",
+      "name": "트롤리 거더",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "끝부분 용접부",
+        "부착물 용접부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "위쪽 및 아래쪽 판 용접부 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "shoulder_beam": {
+      "id": "shoulder_beam",
+      "name": "숄더빔",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "행거 연결부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "아래쪽 판과 행거 연결부 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "forestay": {
+      "id": "forestay",
+      "name": "포스테이",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "끝 연결부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "양쪽 끝 연결판과 응력완화공 주변 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "backstay": {
+      "id": "backstay",
+      "name": "백스테이",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "끝 연결부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "양쪽 끝 연결부 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "diagonal": {
+      "id": "diagonal",
+      "name": "상부 사재",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "끝 연결부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "끝 연결부 및 연결판 주변 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "apex": {
+      "id": "apex",
+      "name": "에이펙스빔 및 A프레임",
+      "fcm": "yes",
+      "parts": [
+        "미상",
+        "몸통",
+        "스테이 연결부",
+        "장비 지지부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-8",
+        "PEMA"
+      ],
+      "checks": [
+        "스테이 연결부 및 장비 지지부 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "boom_hinge": {
+      "id": "boom_hinge",
+      "name": "붐 힌지",
+      "fcm": "partial",
+      "parts": [
+        "미상",
+        "힌지핀",
+        "용접부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G51",
+        "G8-4"
+      ],
+      "checks": [
+        "힌지핀 외관 및 작동 상태의 별도 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "portal_beam": {
+      "id": "portal_beam",
+      "name": "포탈빔",
+      "fcm": "no",
+      "parts": [
+        "미상",
+        "몸통",
+        "단면 변화부",
+        "윗면"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G8-6",
+        "PEMA"
+      ],
+      "checks": [
+        "단면 변화부 확인이 필요하며 내부 격판은 영상 점검 범위 밖임"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "leg": {
+      "id": "leg",
+      "name": "레그",
+      "fcm": "connections_only",
+      "parts": [
+        "미상",
+        "몸통",
+        "연결부",
+        "아래쪽 끝"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G8-6",
+        "PEMA"
+      ],
+      "checks": [
+        "몸통과 연결부를 구분하고 아래쪽 물고임을 확인함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "machinery": {
+      "id": "machinery",
+      "name": "기계실 및 기계 트롤리",
+      "fcm": "partial",
+      "parts": [
+        "미상",
+        "기계실 지붕",
+        "트롤리 틀",
+        "사재 연결부"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-4",
+        "G9-6",
+        "PEMA"
+      ],
+      "checks": [
+        "기계실 외피와 하중 지지 틀의 구분이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "cabin": {
+      "id": "cabin",
+      "name": "운전실",
+      "fcm": "no",
+      "parts": [
+        "미상",
+        "외피",
+        "지지 브래킷"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-6"
+      ],
+      "checks": [
+        "지지 브래킷 틈의 상태 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "sill_beam": {
+      "id": "sill_beam",
+      "name": "실빔",
+      "fcm": "no",
+      "parts": [
+        "미상",
+        "몸통",
+        "수평면"
+      ],
+      "reference_ids": [
+        "G48",
+        "G8-6"
+      ],
+      "checks": [
+        "수평면 물고임 및 해수 비말 노출부 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "bogie": {
+      "id": "bogie",
+      "name": "주행 대차",
+      "fcm": "no",
+      "parts": [
+        "미상",
+        "프레임",
+        "이퀄라이저 핀 주변",
+        "차륜"
+      ],
+      "reference_ids": [
+        "G49",
+        "G48",
+        "PEMA"
+      ],
+      "checks": [
+        "핀 주변 웨브와 연결볼트 및 차륜 확인이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "rail": {
+      "id": "rail",
+      "name": "레일",
+      "fcm": "no",
+      "parts": [
+        "미상",
+        "레일 표면"
+      ],
+      "reference_ids": [
+        "G47"
+      ],
+      "checks": [
+        "균열 및 부식 후보를 확인하며 치수는 별도 측량이 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    },
+    "spreader": {
+      "id": "spreader",
+      "name": "스프레더 및 헤드블록",
+      "fcm": "out_of_scope",
+      "parts": [
+        "미상",
+        "구조 프레임",
+        "로크 핀"
+      ],
+      "reference_ids": [
+        "G50",
+        "G17",
+        "G8-4"
+      ],
+      "checks": [
+        "구조물 외관 확인 및 로크 핀의 별도 검사가 필요함"
+      ],
+      "verification_status": "attachment_interpretation"
+    }
+  },
+  "rules": [
+    {
+      "id": "TEAM-CRACK-CANDIDATE",
+      "version": "1.0.0",
+      "category": "team_workflow",
+      "status": "active",
+      "review_status": "implementation_reviewed",
+      "reviewer": "구현 로직 검토; 현장 전문가 승인 아님",
+      "review_date": "2026-09-30",
+      "scope": "영상 결함 후보의 확인 순서; 안전 및 법정 판정 아님",
+      "required_inputs": [
+        "defect",
+        "area_px"
+      ],
+      "conditions": [
+        {
+          "field": "defect",
+          "operator": "eq",
+          "value": "균열",
+          "unit": null
+        },
+        {
+          "field": "area_px",
+          "operator": "gt",
+          "value": 0,
+          "unit": "pixel"
+        }
+      ],
+      "priority": "주의",
+      "reason": "균열 후보가 있어 면적 크기와 무관하게 점검자 확인을 우선함",
+      "actions": [
+        "원본 및 근접 영상을 대조하고 필요 시 정밀 점검 여부를 검토함"
+      ],
+      "checks": [
+        "그림자, 도장 흔적, 이음선과 실제 균열을 구분함"
+      ],
+      "reference_ids": [],
+      "document": "팀 영상점검 운영규칙",
+      "issuer": "크랙캐쳐 구현 검토",
+      "clause": "TEAM-CRACK-CANDIDATE",
+      "field_validation_status": "미검증"
+    },
+    {
+      "id": "TEAM-CORROSION-CANDIDATE",
+      "version": "1.0.0",
+      "category": "team_workflow",
+      "status": "active",
+      "review_status": "implementation_reviewed",
+      "reviewer": "구현 로직 검토; 현장 전문가 승인 아님",
+      "review_date": "2026-09-30",
+      "scope": "영상 결함 후보의 확인 순서; 안전 및 법정 판정 아님",
+      "required_inputs": [
+        "defect",
+        "area_px"
+      ],
+      "conditions": [
+        {
+          "field": "defect",
+          "operator": "eq",
+          "value": "부식",
+          "unit": null
+        },
+        {
+          "field": "area_px",
+          "operator": "gt",
+          "value": 0,
+          "unit": "pixel"
+        }
+      ],
+      "priority": "경미",
+      "reason": "부식 후보의 존재에 따른 기본 확인 순위임. 영상 면적비로 구조 안전성을 판정하지 않음",
+      "actions": [
+        "부식 여부와 도장 상태를 확인하고 정비 필요성을 검토함"
+      ],
+      "checks": [
+        "얼룩과 부식을 구분하고 필요 시 두께 및 단면 손실을 별도 측정함"
+      ],
+      "reference_ids": [],
+      "document": "팀 영상점검 운영규칙",
+      "issuer": "크랙캐쳐 구현 검토",
+      "clause": "TEAM-CORROSION-CANDIDATE",
+      "field_validation_status": "미검증"
+    },
+    {
+      "id": "TEAM-CONNECTION-CORROSION",
+      "version": "1.0.0",
+      "category": "team_workflow",
+      "status": "active",
+      "review_status": "implementation_reviewed",
+      "reviewer": "구현 로직 검토; 현장 전문가 승인 아님",
+      "review_date": "2026-09-30",
+      "scope": "영상 결함 후보의 확인 순서; 안전 및 법정 판정 아님",
+      "required_inputs": [
+        "defect",
+        "component_confirmed",
+        "is_connection",
+        "area_px"
+      ],
+      "conditions": [
+        {
+          "field": "defect",
+          "operator": "eq",
+          "value": "부식",
+          "unit": null
+        },
+        {
+          "field": "component_confirmed",
+          "operator": "eq",
+          "value": true,
+          "unit": null
+        },
+        {
+          "field": "is_connection",
+          "operator": "eq",
+          "value": true,
+          "unit": null
+        },
+        {
+          "field": "area_px",
+          "operator": "gt",
+          "value": 0,
+          "unit": "pixel"
+        }
+      ],
+      "priority": "주의",
+      "reason": "점검자가 지정한 연결부에 부식 후보가 있어 연결부 확인을 우선함",
+      "actions": [
+        "연결부 틈 및 접근 가능한 면을 추가 확인함"
+      ],
+      "checks": [
+        "연결부 지정 및 후보 귀속의 정확성을 확인함"
+      ],
+      "reference_ids": [],
+      "document": "팀 영상점검 운영규칙",
+      "issuer": "크랙캐쳐 구현 검토",
+      "clause": "TEAM-CONNECTION-CORROSION",
+      "field_validation_status": "미검증"
+    },
+    {
+      "id": "TEAM-CRITICAL-CRACK",
+      "version": "1.0.0",
+      "category": "team_workflow",
+      "status": "active",
+      "review_status": "implementation_reviewed",
+      "reviewer": "구현 로직 검토; 현장 전문가 승인 아님",
+      "review_date": "2026-09-30",
+      "scope": "영상 결함 후보의 확인 순서; 안전 및 법정 판정 아님",
+      "required_inputs": [
+        "defect",
+        "component_confirmed",
+        "critical_context",
+        "area_px"
+      ],
+      "conditions": [
+        {
+          "field": "defect",
+          "operator": "eq",
+          "value": "균열",
+          "unit": null
+        },
+        {
+          "field": "component_confirmed",
+          "operator": "eq",
+          "value": true,
+          "unit": null
+        },
+        {
+          "field": "critical_context",
+          "operator": "eq",
+          "value": true,
+          "unit": null
+        },
+        {
+          "field": "area_px",
+          "operator": "gt",
+          "value": 0,
+          "unit": "pixel"
+        }
+      ],
+      "priority": "주의",
+      "reason": "중요 부재 또는 연결부로 지정된 위치의 균열 후보임. FCM 정보만으로 위험 등급이나 사용 중지를 자동 확정하지 않음",
+      "actions": [
+        "책임 점검자에게 우선 확인을 요청하고 정밀 점검 및 사용 제한 검토 필요성을 판단받음"
+      ],
+      "checks": [
+        "부재의 실제 역할과 연결부 위치를 설계 자료 및 현장에서 확인함"
+      ],
+      "reference_ids": [],
+      "document": "팀 영상점검 운영규칙",
+      "issuer": "크랙캐쳐 구현 검토",
+      "clause": "TEAM-CRITICAL-CRACK",
+      "field_validation_status": "미검증"
+    }
+  ],
+  "excluded_quantitative_thresholds": [
+    {
+      "subject": "균열 0.3/1.5%, 부식 3/12%",
+      "reason": "과거 영상 면적 임계값이며 검증된 안전 기준이 아니므로 신규 판단에 사용하지 않음"
+    },
+    {
+      "subject": "녹 면적 1% 보수",
+      "reason": "표준 원문 미확인으로 사용하지 않음"
+    }
+  ],
+  "limitations": [
+    "외부 자료는 참고 지침이며 원문 재검증 및 현장 전문가 검토가 필요함",
+    "위험은 점검자의 판단으로 기록 가능하며 FCM 및 영상 면적만으로 자동 부여하지 않음",
+    "0픽셀 초과는 후보 존재 조건이며 안전 임계값이 아님"
+  ]
+}

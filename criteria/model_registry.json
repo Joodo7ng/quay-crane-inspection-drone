@@ -1,0 +1,36 @@
+{
+  "version": "2026-09-30.1",
+  "drive_root": "ICT_통합실험0929",
+  "models": {
+    "C0": {
+      "id": "C0",
+      "sha256": "216b878a3763ff030f12a9ca8d1a194ff1d693d418f2b29a6ecab3993f4282d8",
+      "drive_path": "weights/best_E5_tversky.pt"
+    },
+    "R0": {
+      "id": "R0",
+      "sha256": "b735677dcf4e76b4614585abc3e55c046a24c17be08015265c281e455deec906",
+      "drive_path": "weights/baseline0926_verified/best_corrosion_efficientnet-b0.pt"
+    },
+    "C1": {
+      "id": "C1",
+      "sha256": "3f47ec88a86b8f73525951d938d1e3e69f5016ffab9b0c0804c0fd172d47fa67",
+      "drive_path": "runs/finetuning_search_20260929_v1/models/lr1e4_frozen__crack_real/best.pt"
+    },
+    "C2": {
+      "id": "C2",
+      "sha256": "2eeaf3be857e2ba680ce9dc6a8456eba4ced2ac07755109c3bc6465fdafedaff",
+      "drive_path": "runs/finetuning_search_20260929_v1/models/lr1e5_frozen__crack_real_synthetic/best.pt"
+    },
+    "R1": {
+      "id": "R1",
+      "sha256": "4ab1aa41c002fcaf97d0df7a84561cfdc861cff3d592296e95acc0100eb0c915",
+      "drive_path": "runs/finetuning_search_20260929_v1/models/lr1e5_last4__corrosion_real/best.pt"
+    },
+    "R_REPLAY50": {
+      "id": "R_REPLAY50",
+      "sha256": "facabb7df5b60b1d54f5254149c94b4525abcfdf08bed7ec31d545c84f539a66",
+      "drive_path": "runs/replay_20260930_v1/models/corrosion_replay50/round03/weights.pt"
+    }
+  }
+}
